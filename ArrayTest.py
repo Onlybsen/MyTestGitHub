@@ -18,4 +18,5 @@ else:
     print("not found")
 
 print("Hello")
+
 print(arr.index(v)) #will cause error if v is not found in the array
