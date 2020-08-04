@@ -19,4 +19,4 @@ else:
 
 print("Hello World")
 
-print(arr.index(v)) #will cause error if v is not found in the array
+print(arr.index(v)) #will show error if v is not found in the array, otherwise will show the index of v
