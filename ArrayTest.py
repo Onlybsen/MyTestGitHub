@@ -1,6 +1,6 @@
 from array import *
 
-arr = array('i', [])
+arr = array('i',[])
 n = int(input("Enter no. of array elements: "))
 for i in range(n):
     val = int(input("Enter No.:"))
@@ -17,6 +17,7 @@ for k in arr:
 else:
     print("not found")
 
-print("Hello World")
-
-print(arr.index(v)) #will show error if v is not found in the array, otherwise will show the index of v
+#print(arr.index(v)) #will show error if v is not found in the arrayV
+from numpy import *
+arr1 = ndarray([22,34,21,33],[32,11,23,43], int)
+print(arr1)
