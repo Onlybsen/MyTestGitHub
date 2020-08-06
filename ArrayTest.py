@@ -18,6 +18,6 @@ else:
     print("not found")
 
 #print(arr.index(v)) #will show error if v is not found in the arrayV
-from numpy import *
-arr1 = ndarray([22,34,21,33],[32,11,23,43], int)
+import numpy as np
+arr1 = np.array([22,34],[23,43])
 print(arr1)
