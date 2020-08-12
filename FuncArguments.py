@@ -15,7 +15,7 @@ def persdata(**kwdata): #keyworded variable length argument
 
 persdata(Name='Biswajit',dob='18/01/46', place='Singapore',Phone=84984343)
 
-
+# Find number of letters in each entered name
 def names():
     i = 5
     lt =  0
