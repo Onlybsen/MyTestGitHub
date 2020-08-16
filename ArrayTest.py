@@ -1,5 +1,5 @@
 from array import *
-
+import Recursion as aa
 arr = array('i',[])
 n = int(input("Enter no. of array elements: "))
 for i in range(n):
@@ -19,5 +19,7 @@ else:
 
 #print(arr.index(v)) #will show error if v is not found in the arrayV
 import numpy as np
-arr1 = np.array([22,34],[23,43])
+arr1 = np.array([[22,34],[23,43]])
 print(arr1)
+
+print(aa.fact(3))
