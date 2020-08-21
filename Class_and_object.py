@@ -22,6 +22,20 @@ class employee:
         else:
             return False
 
+    def get_method(self):   #Accessor method / Getter
+        return self.name, self.salary
+
+    def set_method(self,value): #Mutator method / Setter
+        self.salary = value
+
+    @classmethod
+    def get_compname(cls): #Class Method
+        return cls.compname
+
+    @staticmethod
+    def get_endinfo(): #Static Method - does'nt use any instance or class variables
+        print("***** End of Job *****")
+
 emp1 = employee("Biswajit", 30, 2, 500) #object instantiation/constructor
 emp2 = employee("Soma", 20, 1.4, 1000) #object instatiation/constructor
 
@@ -39,3 +53,11 @@ if emp1.compare(emp2):  #passing the object emp2 to compare value between two oj
 else:
     print('Salary not same.....')
 
+print(emp1.get_method()) #get the value
+emp1.set_method(200)    #set the value
+emp1.CalcSalry()
+print(emp1.get_method())
+
+print(employee.get_compname())
+
+employee.get_endinfo()
