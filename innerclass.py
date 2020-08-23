@@ -17,10 +17,6 @@ class student:
 
 s1=student("Naveen",19)
 s2=student("Arora",21)
-#lap1=s1.laptop("Dell","i7","16gb")
-#lap2=s2.laptop("HP","i5","8gb")
-#print(s1.name,s1.rollno,lap1.brand,lap1.cpu,lap1.ram)
-#print(s2.name,s2.rollno,lap2.brand,lap2.cpu,lap2.ram)
 
 lap1=student.laptop("Dell","i7","16gb") #creating object outside the class 'student'
 lap2=student.laptop("HP","i5","8gb")    #creating object outside the class 'student'
