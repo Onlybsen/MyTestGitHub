@@ -54,7 +54,7 @@ else:
     print('Salary not same.....')
 
 print(emp1.get_method()) #get the value
-emp1.set_method(200)    #set the value
+emp1.set_method(200)     #set the value
 emp1.CalcSalry()
 print(emp1.get_method())
 
