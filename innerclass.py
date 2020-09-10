@@ -25,8 +25,8 @@ print(s1.name,s1.rollno,s1.lap.brand,s1.lap.cpu,s1.lap.ram) #using object 'lap' 
 
 lap1=student.laptop("Dell","i7","16gb") #creating 1st object outside the class 'student'
 lap2=student.laptop("HP","i5","8gb")    #creating 2nd object outside the class 'student'
-print(s1.name,s1.rollno,lap1.brand,lap1.cpu,lap1.ram)       #using object 'lap1' created outside class 'student'
-print(s2.name,s2.rollno,lap2.brand,lap2.cpu,lap2.ram)       #using object 'lap2' created outside class 'student'
+print(s1.name,s1.rollno,lap1.brand,lap1.cpu,lap1.ram) #using object 'lap1' created outside class 'student'
+print(s2.name,s2.rollno,lap2.brand,lap2.cpu,lap2.ram) #using object 'lap2' created outside class 'student'
 
-print(lap1.show())
-print(lap2.show())
+lap1.show()
+lap2.show()
