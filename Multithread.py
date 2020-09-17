@@ -28,8 +28,8 @@ st=student("Naveen",19)
 lap=laptop("Dell","i7","16gb")
 
 st.start()
-sleep(0.2)   #this is to avoid collusion between the two threads. Do lap while st is sleeping
+sleep(0.2)   #this is to avoid collusion between the two threads. Do 'lap' while 'st' is sleeping
 lap.start()
-st.join()    #this is to request Main Thread to wait for the st to join
-lap.join()   #this is to request Main Thread to wait for the lap to join
-print("Bye") #will be executed by the Main Thread after completing 0f st and lap
+st.join()    #this is to request main Thread to wait for the st to join
+lap.join()   #this is to request main Thread to wait for the lap to join
+print("Bye") #will be executed by the main Thread after completing 0f st and lap
