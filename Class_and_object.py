@@ -25,19 +25,19 @@ class employee:
     def get_method(self):   #Accessor method / Getter
         return self.name, self.salary
 
-    def set_method(self,value): #Mutator method / Setter
+    def set_method(self,value): #Mutator method / Setter. Must use 'self' to work with instance variables
         self.salary = value
 
-    @classmethod
-    def get_compname(cls): #Class Method
+    @classmethod    #Decorator
+    def get_compname(cls): #Class Method. Must use 'cls' to work with class variables
         return cls.compname
 
-    @staticmethod
+    @staticmethod   #Decorator
     def get_endinfo(): #Static Method - does'nt use any instance or class variables
         print("***** End of Job *****")
 
 emp1 = employee("Biswajit", 30, 2, 500) #object instantiation/constructor
-emp2 = employee("Soma", 20, 1.4, 1000) #object instatiation/constructor
+emp2 = employee("Soma", 20, 1.4, 1000)  #object instatiation/constructor
 
 emp1.place = "Singapore"
 
