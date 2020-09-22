@@ -1,0 +1,25 @@
+Echo Off
+Echo Copy this program in Desktop. Run in Admin Mode. Output will be in C Drive.
+Echo Write some macro for the software installed to split Name and Version for better visibility
+Echo 1st in Col K =mid(A15,1,search("   ",A15,1) - assume Row 15 has the 1st sw
+Echo 2nd in Col O =mid(A15,(search("   ",A15,1)+1),len(A15)-len(K15))
+>C:\users\user\SWInstall.xls (
+Echo ----------- List of Installed SW ------------
+Echo ------------- Date - Time ----------
+date /t
+time /t
+Echo ---------- Hostname -------------
+hostname
+Echo --------------
+wmic bios get serialnumber
+Echo --------- MAC Address -----------
+getmac | findstr "E8" | findstr "Tcpip"
+getmac | findstr "84" | findstr "Tcpip"
+Echo ----------- Software Installed ------------
+wmic product get name, version
+Echo -------------- ipconfig -------------
+ipconfig /all
+)
+
+Echo - The below command is a Powershell script. Copy and run in Powershell. Preferably as  an Admin. The results are diff from above and more structured.
+Echo Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object $env:computername, DisplayName, DisplayVersion, Publisher, installdate  |export-csv -Delimiter "," -Path C:\temp\$env:computername.csv -NoTypeInformation   
